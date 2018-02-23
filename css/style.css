@@ -2,220 +2,209 @@
 body {
     margin: 30px 0;
     font-size: 18px;
+    color: #333333;
 }
 
-div.header {
-  /* height: 60px; */
-  padding: 0px 40px 30px 40px;
+h3.secondaryValueProp {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+div.legalLinks {
+    font-size: 0.8em;
+    text-align: center;
 }
 
 div.heroScreenshot {
-  background: url('../img/hero_screen.png') no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  align: center;
-  width: 225px;
-  height: 450px;
-  margin: 0 80px 0 auto;
+    background: url('../img/hero_screen.png') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    align: center;
+    width: 250px;
+    height: 509px;
+    margin: 0 80px 0 auto;
 }
 
 div.heroScreenshotCel {
-  background: url('../img/hero_screen.png') no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  align: center;
-  width: 225px;
-  height: 450px;
-  margin: 30px auto;
-  display: none;
+    background: url('../img/hero_screen.png') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    align: center;
+    width: 250px;
+    height: 510px;
+    margin: 30px auto;
+    display: none;
 }
 
 a.appStoreButton.large {
-  width: 189px;
-  height: 56px;
-  margin: 5px auto;
+    width: 189px;
+    height: 56px;
+    margin: 5px auto;
 }
 
 a.appStoreButton {
-  background: url('../img/app_store_badge_135x40.svg') no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  align: center;
-  width: 135px;
-  height: 40px;
-  margin: 40px auto;
-  cursor: pointer;
-  display: block;
+    background: url('../img/app_store_badge_135x40.svg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    align: center;
+    width: 135px;
+    height: 40px;
+    margin: 40px auto;
+    cursor: pointer;
+    display: block;
 }
 
 .container .jumbotron {
-  /*min-height: 550px;*/
-  background: #3498DB; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#3498DB, #EEEEEE); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#3498DB, #EEEEEE); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#3498DB, #EEEEEE); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#3498DB, #EEEEEE); /* Standard syntax */
-  vertical-align: middle;
-  border-radius: 0;
+    color: white;
+    background: #216ACC;
+    background: radial-gradient(at top left, #65E3FC, #216ACC, #216ACC, #216ACC);
+    vertical-align: middle;
+    border-radius: 0;
 }
 
 p.centeredText {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
 }
 
+div.fullLogoImage {
+    background: url('../img/giggy_bank_logo.svg') no-repeat center center scroll;
+    background-size: 340px 106px;
+    width: 400px;
+    height: 125px;
+    margin: 20px auto 70px auto;
+}
+
+p.freeTrialText {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h2.tagline {
+    font-size: 3.0em;
+    text-shadow: 0px 0px 5px #000000;
+}
+
+
+
 @media(max-width:1200px) {
-  div.fullLogoImage {
-    width: 367px;
-    height: 100px;
-    margin: 110px auto 0 auto;
-  }
-/*}
+    div.fullLogoImage {
+        background-size: 300px 100px;
+        width: 300px;
+        height: 100px;
+        margin: 75px auto 40px auto;
+    }
 
-/* iPad */
-/*@media(max-width:1024px) {*/
+    body {
+        font-size: 16px;
+    }
 
-  h2.tagline {
-    font-size: 1.7em;
-  }
+    p {
+        margin: 1em auto;
+    }
 
-  body {
-    font-size: 14px;
-  }
-
-  p {
-    margin: 1em auto;
-  }
-
-  .exampleJobImage {
-    margin: 10px auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
-    border: 3px solid #3498DB;
-  }
-
-  div.heroScreenshot {
-    margin-right: auto;
-  }
+    div.heroScreenshot {
+        margin-right: auto;
+    }
 
 }
 
 /*iPhone 6 landscape and phone layout cutoff*/
 @media(max-width:767px) {
 
-  .container .jumbotron {
-    padding-bottom: 15px;
-  }
+    h2.tagline {
+        font-size: 2.7em;
+    }
 
-  div.fullLogoImage {
-    width: 300px;
-    height: 82px;
-    margin: 0 auto;
-  }
+    .container .jumbotron {
+        padding-bottom: 15px;
+    }
 
-  h2.tagline {
-    font-size: 1.6em;
-  }
+    div.fullLogoImage {
+        background-size: 250px 68px;
+        width: 250px;
+        height: 68px;
+        margin: 0 auto;
+    }
 
-  div.heroScreenshot {
-    display: none;
-  }
+    div.heroScreenshot {
+        display: none;
+    }
 
-  div.heroScreenshotCel {
-    display: block;
-  }
+    div.heroScreenshotCel {
+        display: block;
+    }
 
-  p.freeTrialText {
-    margin-top: 20px;
-  }
-
-  .exampleJobImage {
-    margin: 10px auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    border: 2px solid #3498DB;
-  }
+    p.freeTrialText {
+        margin-top: 20px;
+    }
 }
 
 /*iPhone 6 Plus*/
 @media(max-width:414px) {
-  ul {
-    padding-left: 20px;
-  }
+    body {
+        font-size: 12px;
+    }
 
-  p.centeredText {
-    width: 100%;
-  }
+    ul {
+        padding-left: 20px;
+    }
 
-  h3 {
-    font-size: 1.9em;
-  }
+    p.centeredText {
+        width: 100%;
+    }
+
+    div.heroScreenshotCel {
+        width: 185px;
+        height: 380px;
+        margin: 20px auto;
+    }
+
+    div.appStoreButtonLarge {
+        margin: 20px auto 15px auto;
+    }
 }
 
-/*iPhone 6*/
-@media(max-width:375px) {
-  div.heroScreenshotCel {
-    width: 185px;
-    height: 370px;
-    margin: 20px auto;
-  }
-
-  h3 {
-    font-size: 1.7em;
-  }
-
-  div.appStoreButtonLarge {
-    margin: 20px auto 15px auto;
-  }
-
-}
-
-/*iPhone 5*/
 @media(max-width:320px) {
-  body {
-    margin-top: 20px;
-  }
+    body {
+        margin-top: 20px;
+    }
 
-  .container .jumbotron {
-    padding: 20px 15px 15px 15px;
-    min-height: 400px;
-  }
+    .container .jumbotron {
+        padding: 20px 15px 15px 15px;
+        min-height: 400px;
+    }
 
-  a#contactLink {
-    position: absolute;
-    font-size: .8em;
-  }
+    a#contactLink {
+        position: absolute;
+        font-size: .8em;
+    }
 
-  div.appStoreButtonLarge {
-    width: 150px;
-    height: 44px;
-    margin: 20px auto 15px auto;
-  }
+    div.appStoreButtonLarge {
+        width: 150px;
+        height: 44px;
+        margin: 20px auto 15px auto;
+    }
 
-  h2.tagline {
-    font-size: 1.2em;
-  }
+    div.fullLogoImage {
+        background-size: 158px 61px;
+        width: 158px;
+        height: 61px;
+    }
 
-  h3{
-    font-size: 1.4em;
-  }
+    div.heroScreenshotCel {
+        width: 150px;
+        height: 308px;
+    }
 
-  div.fullLogoImage {
-    width: 250px;
-    height: 68px;
-  }
-
-  div.heroScreenshotCel {
-    width: 135px;
-    height: 270px;
-  }
+    p.freeTrialText {
+        width:165px;
+    }
 }
