@@ -7,8 +7,8 @@ body {
 
 h2.tagline {
     font-size: 2.8em;
-    margin-left: 0.8em;
-    margin-right: 0.8em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     margin-top: 1em;
     text-shadow: 0px 0px 5px #000000;
 }
@@ -18,7 +18,7 @@ h3 {
 }
 
 h3.secondaryValueProp {
-    margin-top: 30px 1em 15px 1em;
+    margin: 2em 1em 1em 1em;
     color: #216ACC;
 }
 
@@ -104,7 +104,8 @@ div.fullLogoImage {
 }
 
 p.centeredText.freeDescription {
-    margin-top: 0;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 .valueProps p {
