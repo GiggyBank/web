@@ -18,46 +18,88 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108629693-2"></script>
+
     <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      gtag('config', 'UA-108629693-2');
 
-      // ga('create', '--SET NEW ID---', 'auto');
-      // ga('send', 'pageview');
 
-      function getURLParameter(name) {
-        // return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
-      }
+        function getURLParameter(name) {
+            return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+        }
 
-      function handleAppStoreButtonClicks(event) {
+        function handleAppStoreButtonClicks(event) {
 
-        // var urlCid = getURLParameter('cid')
-        // var cid = (urlCid != null && urlCid != "") ? urlCid : 'hmpg'
-        //
-        // var appStoreUrl = "--- APP STORE URL ---"
-        //
-        // ga('send', 'event', {
-        //   eventCategory: 'Outbound Link',
-        //   eventAction: 'click',
-        //   eventLabel: cid,
-        //   eventValue: 1
-        // });
-        //
-        // window.open(appStoreUrl)
-      }
+            var urlCid = getURLParameter('cid')
+            var cid = (urlCid != null && urlCid != "") ? urlCid : 'hmpg'
+
+            var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1325116730?pt=118908438&ct="+cid+"&mt=8"
+
+            gtag('event', 'click', {
+              'event_category': 'Outbound Link',
+              'event_label': cid,
+              'value': 1
+            });
+
+            window.open(appStoreUrl)
+        }
     </script>
-
 </head>
 
 <body>
 
-Giggy Bank is Coming Soon!
+
+    <div class="container" style="position: relative">
+        <div class="jumbotron text-center">
+            <div class="gradientBox"></div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="heroScreenshot"></div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="fullLogoImage"></div>
+                    <h2 class="tagline">Hustle Like You Mean It.</h2>
+                    <p class="freeTrialText">Free Download. Install Today!</p>
+                    <a class="appStoreButton large" onclick="handleAppStoreButtonClicks(event)"></a>
+                    <div class="heroScreenshotCel"></div>
+                </div>
+            </div>
+            &nbsp;
+        </div>
+
+        <h3 style="text-align: center;" class="secondaryValueProp">Common sense income tracking for the independent hustler.</h3>
+        <div class="row valueProps">
+            <div class="col-xs-12 col-sm-4">
+                <div class="featureImage fileBoxImage"></div>
+                <h3>Stay Organized</h3>
+                <p>It literally takes just seconds to track your work and payments.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="featureImage fileStackImage"></div>
+                <h3>Be Professional</h3>
+                <p>Customizable balance statements and receipts make you look good.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="featureImage chartImage"></div>
+                <h3>Get Insight</h3>
+                <p>Incredibly useful reports let you truly get to know your business.</p>
+            </div>
+        </div>
+        <h3 style="text-align: center; margin-top: 2em;" class="secondaryValueProp">Try It Free!</h3>
+        <p class="centeredText freeDescription">Giggy Bank is free to use forever with up to three clients. You also get 30 days of free access to Giggy Bank's premium features to see what we're all about.</p>
+        <a class="appStoreButton" onclick="handleAppStoreButtonClicks(event)"></a>
+    <hr>
+    <div class="container legalLinks">
+        <a href="legal/terms.html" style="margin-right: 60px">Terms of Use</a><a href="legal/privacy.html">Privacy Policy</a></span><br/><br/>
+    </div>
+</div>
 
 </body>
 </html>
