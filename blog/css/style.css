@@ -1,0 +1,81 @@
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+.container .jumbotron {
+    background: white;
+    color: #216ACC;
+
+}
+
+div.socialIcons {
+    margin-top: 25px;
+}
+
+div.blogArticle {
+    padding: 0 1em;
+}
+
+.blogArticle p {
+    margin: 1em 0;
+}
+
+.blogArticle h2 {
+    color: #216ACC;
+    margin: 2em 0 1em 0;
+}
+
+.blogArticle h3 {
+    margin: 1.2em 0 0.8em 0;
+}
+
+.blogArticle .sectionContent {
+    padding: 0 1em;
+}
+
+.fullWidthImage {
+    margin: 2em 0;
+    clear: both;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+#columnDescriptions {
+    margin: 1em 0;
+}
+
+div.headerLogoImage {
+    background: url('../../img/giggy_bank_logo_black_font.svg') no-repeat center center scroll;
+    background-size: 200px 63px;
+    width: 200px;
+    height: 63px;
+    margin: 10px 20px;
+}
+
+div .smallLogoImage {
+    background: url('../../img/giggy_bank_logo_black_font.svg') no-repeat center center scroll;
+    background-size: 260px 70px;
+    width: 260px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+/*iPhone 6 landscape and phone layout cutoff*/
+@media(max-width:767px) {
+    .container .jumbotron {
+        padding-top: 0;
+    }
+}
+
+/*iPhone 6 Plus*/
+@media(max-width:414px) {
+
+}
+
+/* iPhone SE */
+@media(max-width:320px) {
+
+}

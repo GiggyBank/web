@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Giggy Bank - Common Sense Income Tracker.">
+
+        <title>The Ultimate Notebook Accounting System</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="lib/jssocials/jssocials.css" rel="stylesheet">
+        <link href="lib/jssocials/jssocials.css" rel="stylesheet">
+        <link href="lib/jssocials/jssocials-theme-flat.css" rel="stylesheet">
+        <link href="lib/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- <link href="lib/fontawesome/css/fa-brands.min.css" rel="stylesheet"> -->
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108629693-2"></script>
+
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-108629693-2');
+
+
+            function getURLParameter(name) {
+                return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+            }
+
+            function handleAppStoreButtonClicks(event) {
+
+                var urlCid = getURLParameter('cid')
+                var cid = (urlCid != null && urlCid != "") ? urlCid : 'blog-paper-accounting'
+
+                var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1325116730?pt=118908438&ct="+cid+"&mt=8"
+
+                gtag('event', 'click', {
+                  'event_category': 'Outbound Link',
+                  'event_label': cid,
+                  'value': 1
+                });
+
+                window.open(appStoreUrl)
+            }
+        </script>
+        <style>
+            .container .jumbotron div#heroImage {
+                background: url('img/woman_notebook_grass.jpg') no-repeat center center scroll;
+                background-size: 600px 400px;
+                width: 100;
+                height: 400px;
+                margin: 2em auto 2em 0;
+            }
+
+            div#topOfPage {
+                background: url('img/notebook_accounting_top.png') no-repeat center center scroll;
+                background-size: 612px 134px;
+                width: 612px;
+                height: 134px;
+                margin: 2em auto 2em 0;
+            }
+
+            div#snowExample {
+                background: url('img/notebook_accounting_example.png') no-repeat center center scroll;
+                background-size: 612px 207px;
+                width: 612px;
+                height: 207px;
+                margin: 2em auto 2em 0;
+            }
+
+            div#summaryImg  {
+                background: url('img/notebook_accounting_summary.png') no-repeat center center scroll;
+                background-size: 612px 90px;
+                width: 612px;
+                height: 90px;
+            }
+
+            div#hourlyImg  {
+                background: url('img/notebook_accounting_hourly.png') no-repeat center center scroll;
+                background-size: 612px 80px;
+                width: 612px;
+                height: 80px;
+            }
+
+            /*iPhone 6 landscape and phone layout cutoff*/
+            @media(max-width:767px) {
+            }
+
+            /*iPhone 6 Plus*/
+            @media(max-width:414px) {
+                div#topOfPage {
+                    background: url('img/notebook_accounting_top.png') no-repeat center center scroll;
+                    background-size: 306px 67px;
+                    width: 306px;
+                    height: 67px;
+                }
+
+                div#snowExample {
+                    background: url('img/notebook_accounting_example.png') no-repeat center center scroll;
+                    background-size: 306px 104px;
+                    width: 306px;
+                    height: 104px;
+                    margin: 2em auto 2em 0;
+                }
+
+                div#summaryImg  {
+                    background: url('img/notebook_accounting_summary.png') no-repeat center center scroll;
+                    background-size: 306px 45px;
+                    width: 306px;
+                    height: 45px;
+                }
+
+                div#hourlyImg  {
+                    background: url('img/notebook_accounting_hourly.png') no-repeat center center scroll;
+                    background-size: 306px 40px;
+                    width: 306px;
+                    height: 40px;
+                }
+
+            }
+
+            /* iPhone SE */
+            @media(max-width:320px) {
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container" style="position: relative">
+            <div class="header">
+                <div class="headerLogoImage"></div>
+            </div>
+            <hr>
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-sm-6">
+                    <h1>The Ultimate Notebook Accounting System</h1>
+                    <div class="socialIcons">
+                    </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="heroImage"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogArticle">
+                <p>
+                    Your side hustle is bringing in some money and that is AWESOME. Now that you've got some regular income it is time to start keeping track of it. Don't worry if you don't know much about "accounting". You don't need to!
+                </p>
+                <p>
+                    Let's take a look at an incredibly simple way to keep track of your side business income that requires no more than some paper, a pen, and a little discipline (aka, the hard part).
+                </p>
+
+                <h2>Why Track Income?</h2>
+                    <p>
+                        If you are reading this article you probably already know that there are many reasons to keep track of income from your side business. If you still need some convincing, here are a few reasons of my own:
+                    </p>
+
+                    <h3>Get peace of mind.</h3>
+                    <p>
+                        Keeping good records will make you feel in control of your business finances and avoid related stress. You shouldn't have to wonder if you forgot to collect payment or struggle to figure out what your clients owe you.
+                    </p>
+                    <h3>Be professional.</h3>
+                    <p>
+                        It should be a simple matter to answer client questions about their outstanding balance. Similarly, it should be easy to answer your own (or your accountant's) questions about how much money is coming in. A professional business knows the answer to these questions at all times and you should too.
+                    </p>
+                    <h3>See your progress.</h3>
+                    <p>
+                        Tracking the money you have made with your side hustle will highlight its postive impact on your finances and provide motivation to keep at it.
+                    </p>
+                    <h3>Save money at the accountant.</h3>
+                    <p>
+                        Any accountant will tell you that the best way to save money on accounting is to be as organized as possible.
+                    </p>
+
+                <h2>Required Equipment</h2>
+                <p>
+                    You've probably already got what you need to get up and running:
+                </p>
+                <p>
+                    <b>Required:</b> Paper and a pen.<br>
+                    <b>Optional:</b> Notebook or binder. 3-hole punch. Ruler.<br>
+                    <br>
+                    <b>Shortcut:</b> Use a printer to print out the <a href="Income_Tracking_Template.pdf" target="_blank">free template</a>!
+                </p>
+
+                <h2>Getting Started</h2>
+                <p>
+                    Each of your clients gets their own sheet of paper. Let’s go ahead and set up one client:
+                </p>
+                <ol>
+                    <li>Write the client name up in the top right corner of the page.</li>
+                    <li>The individual transactions will go into a table. Split the page into the following 4 columns:
+                        <ul id="columnDescriptions">
+                            <li><b>Date</b> - the transaction date</li>
+                            <li><b>Description</b> - what happened?</li>
+                            <li><b>Amount</b> - the amount of this transaction</li>
+                            <li><b>Balance</b> - the balance after this transaction</li>
+                        </ul>
+                    </li>
+                </ol>
+                <!-- Amount Billed - the total amount billed
+                Amount Paid - the total amount paid -->
+                <p>
+                    When you’re done it should look like this:
+                </p>
+                <div id="topOfPage"></div>
+                <p>
+                    <em>This is the most basic set up. See the “Pro Tips” section below for some ideas that expand on this.</em>
+                </p>
+
+                <h2>How To Use</h2>
+                <p>With your page set up, you are ready to start keeping track of your income.</p>
+
+                <h3>When you do work:</h3>
+                <div class="sectionContent">
+                    <h4>Add a new row in your table:</h4>
+
+                    <ol>
+                        <li>Write the date</li>
+                        <li>Enter a description of the work</li>
+                        <li>Enter the amount charged</li>
+                        <li>Update the “balance” column by adding the amount to the previous “balance” value.</li>
+                    </ol>
+                </div>
+                <h3>When you get paid:</h3>
+                <div class="sectionContent">
+                    <h4>Add a new row in your table:</h4>
+
+                    <ol>
+                        <li>Write the date</li>
+                        <li>Enter a description of the payment (I.e. “Cash Payment”, “Check Payment”)</li>
+                        <li>Enter the amount paid as a negative number</li>
+                        <li>Update the “balance” column by subtracting the amount paid from the previous “balance” value.</li>
+                    </ol>
+                </div>
+
+                <h3>That's it!</h3>
+
+                <h2>An Example</h2>
+                    <div id="snowExample"></div>
+
+                    <p>
+                        In this example you can see how the system works. The balance goes up when you do work and comes back down when you receive payment.
+                    </p>
+
+                <h2>Pro Tips</h2>
+                <p>Check out the following tips to get the most out of your notebook accounting system.</p>
+
+                <h3>Use A Binder</h3>
+
+                <p>Keep your system flexible by using loose sheets and putting them in a 3-ring binder. That way it's easy to insert pages and reorganize things if need be. You can also use tabbed separators to easily look up your clients.</p>
+
+                <h3>Add A Summary</h3>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p style="margin-top: 0">When you wrap up a page, summarize the activity on that page at the top. Write the date range, the starting and ending balance and total up the payments on the page.</p>
+                    </div>
+                    <div class="col-sm-7">
+                        <div id="summaryImg"></div>
+                    </div>
+                </div>
+
+                <h3>Get More Column Space</h3>
+                <p>Running out of room in your columns? Turning the notebook sideways will give you more space to write descriptions and make room for any "custom" columns.</p>
+
+                <h3>Track Hourly Work</h3>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p style="margin-top: 0">You can easily track hourly work using a similar approach with some minor modifications.</p>
+
+                        <p>
+                            When you set up your page, add two columns to the basic setup:
+                            <ol id="columnDescriptions">
+                                <li><b>Rate</b> - Price charged per hour</li>
+                                <li><b>Hours</b> - Hours worked</li>
+                            </ol>
+                            Simply enter the rate and hours and multiply them together to get the amount. For payments, just leave the rate and hours columns empty.
+                        </p>
+                    </div>
+                    <div class="col-sm-7">
+                        <div id="hourlyImg"></div>
+                    </div>
+                </div>
+
+                <h3>Total Payments</h3>
+            	<p>Want to know how much money you have been paid by a client at all times? Add a "total payments" column to your table and keep a running total by adding the amount of payment transactions.</p>
+
+                <h3>Scan Pages</h3>
+                <p>Use <a href="http://www.evernote.com" target="_blank">Evernote</a> to digitize your income notebook. "Scan" your pages into Evernote with your mobile phone and it will not only give you a digital backup of your paper system but it also uses OCR to make your handwriting searchable. How cool is that?!</p>
+
+                <h3>Fix Wide Margins In Template</h3>
+                <p>
+                    Using the <a href="Income_Tracking_Template.pdf" target="_blank">free downloadable template</a>? Print in "actual size" to avoid extra wide margins.
+                </p>
+
+                <h2>Shameless Plug</h2>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p>
+                            If you like this approach to income tracking you should check out Giggy Bank. It is essentially this system in an iPhone app but with so much more! See graphical reports, send invoices, export a spreadsheet, and more - all based on simply entering your work and payments. <br>
+                            <br>Giggy Bank is free forever with up to three clients and comes with a 30 day free trial of the "Unlimited" plan.<br>
+                            <br>Download it from the App Store today!
+                        </p>
+                    </div>
+                    <div class="col-sm-7 storeButtonContainer">
+                        <div class="smallLogoImage"></div>
+                        <a class="appStoreButton" onclick="handleAppStoreButtonClicks(event)"></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="container legalLinks">
+                <a href="legal/terms.html" style="margin-right: 60px">Terms of Use</a><a href="legal/privacy.html">Privacy Policy</a></span><br/><br/>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <script src="lib/jssocials/jssocials.min.js"></script>
+
+        <script>
+            shareConfig = {
+                shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest"],
+                url: "https://www.giggybankapp.com/blog/ultimate-notebook-accounting.html",
+                text: "Track income from your side hustle with this incredibly simple system!",
+                showLabel: false,
+                showCount: false,
+                shareIn: "popup",
+                on: {
+                    click: function(e) {
+                        //track w google
+                    }
+                }
+            }
+
+
+            $(".socialIcons").jsSocials(shareConfig)
+        </script>
+    </body>
+</html>
