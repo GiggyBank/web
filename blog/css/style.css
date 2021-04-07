@@ -48,7 +48,7 @@ li {
 }
 
 div.headerLogoImage {
-    background: url('../../img/giggy_bank_logo_black_font.svg') no-repeat center center scroll;
+    background: url('/img/logo.svg') no-repeat center center scroll;
     background-size: 200px 63px;
     width: 200px;
     height: 63px;
@@ -56,7 +56,7 @@ div.headerLogoImage {
 }
 
 div .smallLogoImage {
-    background: url('../../img/giggy_bank_logo_black_font.svg') no-repeat center center scroll;
+    background: url('/img/logo.svg') no-repeat center center scroll;
     background-size: 260px 70px;
     width: 260px;
     height: 70px;

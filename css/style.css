@@ -1,288 +1,513 @@
+html {
+  font-size: 16px;
+}
 
 body {
-    margin: 30px 0;
-    font-size: 18px;
-    color: #333333;
+  overflow-x: hidden;
+  font-family: Tahoma, "Helvetica Neue", Arial, sans-serif;
 }
 
-h2.tagline {
-    font-size: 2.8em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    margin-top: 1em;
-    text-shadow: 0px 0px 5px #000000;
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-h3 {
-        font-size: 1.5em;
+h2 {
+  font-size: 2.3rem;
 }
 
-h3.secondaryValueProp {
-    margin: 2em 1em 1em 1em;
-    color: #216ACC;
-}
-
-.jumbotron p {
-    font-size: 1.2em;
-}
-
-div.legalLinks {
-    font-size: 0.8em;
-    text-align: center;
-}
-
-div.heroScreenshot {
-    background: url('../img/hero_screen.png') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    align: center;
-    width: 250px;
-    height: 509px;
-    margin: 0 80px 0 auto;
-}
-
-div.heroScreenshotCel {
-    background: url('../img/hero_screen.png') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    align: center;
-    width: 250px;
-    height: 510px;
-    margin: 30px auto;
-    display: none;
+h2.leadingSectionTitle {
+  margin-bottom: 30px;
 }
 
 a.appStoreButton {
-    background: url('../img/app_store_badge_135x40.svg') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    align: center;
-    width: 165px;
-    height: 49px;
-    margin: 40px auto;
-    cursor: pointer;
-    display: block;
+  background: url("/img/app_store_badge_135x40.svg") no-repeat center center
+    scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 165px;
+  height: 49px;
+  cursor: pointer;
+  display: block;
 }
 
 a.appStoreButton.large {
-    width: 189px;
-    height: 56px;
-    margin: 2em auto;
+  width: 189px;
+  height: 56px;
 }
 
-.container .jumbotron {
-    color: white;
-    background: #216ACC;
-    background: radial-gradient(at top left, #65E3FC, #216ACC, #216ACC, #216ACC);
-    vertical-align: middle;
-    border-radius: 0;
+/* ## Header Section */
+
+.row.headerSection {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-p.centeredText {
+.subheading {
+  font-size: 2rem;
+}
+
+.topLogo {
+  height: 64px;
+}
+
+/* ## Hero Section */
+
+.heroRow {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.heroSubtext {
+  margin: 30px 0;
+  color: #777;
+  text-align: center;
+}
+
+.heroQuote {
+  color: #3484d8;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-bottom: 40px;
+}
+
+.heroButtonAndRating {
+  display: none;
+}
+
+.heroImage {
+  width: 80%;
+}
+
+/* ## 1,2,3 section */
+
+.row.howItWorksSection {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjUgMjFDNC43MDEwMSAyMSAwIDE2LjI5OSAwIDEwLjVDMCA0LjcwMTAxIDQuNzAxMDEgMCAxMC41IDBDMTYuMjk5IDAgMjEgNC43MDEwMSAyMSAxMC41QzIxIDE2LjI5OSAxNi4yOTkgMjEgMTAuNSAyMVoiIGZpbGw9IiNGRjFGMUYiLz4KPC9zdmc+Cg=="), /* red circle*/
+    url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjUgMjFDNC43MDEwMSAyMSAwIDE2LjI5OSAwIDEwLjVDMCA0LjcwMTAxIDQuNzAxMDEgMCAxMC41IDBDMTYuMjk5IDAgMjEgNC43MDEwMSAyMSAxMC41QzIxIDE2LjI5OSAxNi4yOTkgMjEgMTAuNSAyMVoiIGZpbGw9IiMyQkQ2N0IiLz4KPC9zdmc+Cg=="), /* green circle */ 
+    url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjUgMjFDNC43MDEwMSAyMSAwIDE2LjI5OSAwIDEwLjVDMCA0LjcwMTAxIDQuNzAxMDEgMCAxMC41IDBDMTYuMjk5IDAgMjEgNC43MDEwMSAyMSAxMC41QzIxIDE2LjI5OSAxNi4yOTkgMjEgMTAuNSAyMVoiIGZpbGw9IiMyQkQ2N0IiLz4KPC9zdmc+Cg=="), /* green circle */ 
+    url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgMTBDMi4yMzg1OCAxMCAwIDcuNzYxNDIgMCA1QzAgMi4yMzg1OCAyLjIzODU4IDAgNSAwQzcuNzYxNDIgMCAxMCAyLjIzODU4IDEwIDVDMTAgNy43NjE0MiA3Ljc2MTQyIDEwIDUgMTBaIiBmaWxsPSIjRjdFMzZEIi8+Cjwvc3ZnPgo="), /* yellow circle */
+    url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjE4IiBoZWlnaHQ9IjI5MSIgdmlld0JveD0iMCAwIDIxOCAyOTEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIG9wYWNpdHk9IjAuNSIgZD0iTS0xMjguODUzIDEzMy44NThDLTExOC41OTEgMTE2LjI4IC0xMDQuOTY3IDEwMC44OTUgLTg4Ljc1ODcgODguNTgxM0MtNzIuNTUwNSA3Ni4yNjggLTU0LjA3NTggNjcuMjY3OCAtMzQuMzg5MyA2Mi4wOTQ0Qy0xNC43MDI4IDU2LjkyMTEgNS44MDk5MiA1NS42NzU5IDI1Ljk3NzYgNTguNDMwMUM0Ni4xNDUzIDYxLjE4NDIgNjUuNTczMSA2Ny44ODM3IDgzLjE1MTYgNzguMTQ2MUMxMDAuNzMgODguNDA4NCAxMTYuMTE1IDEwMi4wMzMgMTI4LjQyOSAxMTguMjQxQzE0MC43NDIgMTM0LjQ0OSAxNDkuNzQyIDE1Mi45MjQgMTU0LjkxNSAxNzIuNjFDMTYwLjA4OSAxOTIuMjk3IDE2MS4zMzQgMjEyLjgwOSAxNTguNTggMjMyLjk3N0MxNTUuODI2IDI1My4xNDUgMTQ5LjEyNiAyNzIuNTczIDEzOC44NjQgMjkwLjE1MUw5MC42MDMxIDI2MS45NzdDOTcuMTY1NSAyNTAuNzM2IDEwMS40NSAyMzguMzEyIDEwMy4yMTEgMjI1LjQxNkMxMDQuOTcyIDIxMi41MTkgMTA0LjE3NiAxOTkuNDAyIDEwMC44NjggMTg2LjgxM0M5Ny41NTk0IDE3NC4yMjQgOTEuODA0IDE2Mi40MTEgODMuOTMwMiAxNTIuMDQ2Qzc2LjA1NjMgMTQxLjY4MSA2Ni4yMTggMTMyLjk2OSA1NC45NzcxIDEyNi40MDdDNDMuNzM2MiAxMTkuODQ0IDMxLjMxMjkgMTE1LjU2IDE4LjQxNjMgMTEzLjc5OUM1LjUxOTc2IDExMi4wMzggLTcuNTk3MzkgMTEyLjgzNCAtMjAuMTg2MiAxMTYuMTQyQy0zMi43NzUgMTE5LjQ1IC00NC41ODkgMTI1LjIwNiAtNTQuOTUzNiAxMzMuMDhDLTY1LjMxODIgMTQwLjk1NCAtNzQuMDMwNCAxNTAuNzkyIC04MC41OTI4IDE2Mi4wMzNMLTEyOC44NTMgMTMzLjg1OFoiIGZpbGw9IiNEREU5RkYiLz4KPC9zdmc+Cg=="), /* ellipse_1 */
+    url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ3IiBoZWlnaHQ9IjMxOCIgdmlld0JveD0iMCAwIDE0NyAzMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIG9wYWNpdHk9IjAuNSIgZD0iTTE2OS41MjIgMzEwLjQ3OEMxNDkuMTg3IDMxMS4zODMgMTI4Ljg3MyAzMDguMjc0IDEwOS43NCAzMDEuMzI4QzkwLjYwNyAyOTQuMzgzIDczLjAyOTMgMjgzLjczNiA1OC4wMTA2IDI2OS45OTdDNDIuOTkxOSAyNTYuMjU4IDMwLjgyNjQgMjM5LjY5NiAyMi4yMDg2IDIyMS4yNTVDMTMuNTkwOSAyMDIuODE0IDguNjg5NjMgMTgyLjg1NyA3Ljc4NDc3IDE2Mi41MjJDNi44Nzk5MSAxNDIuMTg3IDkuOTg5MTMgMTIxLjg3MyAxNi45MzQ5IDEwMi43NEMyMy44ODA3IDgzLjYwNzIgMzQuNTI3MSA2Ni4wMjk0IDQ4LjI2NjEgNTEuMDEwOEM2Mi4wMDUxIDM1Ljk5MjEgNzguNTY3NyAyMy44MjY2IDk3LjAwODMgMTUuMjA4OEMxMTUuNDQ5IDYuNTkxMDMgMTM1LjQwNiAxLjY4OTggMTU1Ljc0MSAwLjc4NDk0M0wxNTguMjI1IDU2LjYxMjZDMTQ1LjIyMiA1Ny4xOTEyIDEzMi40NiA2MC4zMjU0IDEyMC42NjggNjUuODM2MUMxMDguODc2IDcxLjM0NjkgOTguMjg0NCA3OS4xMjYzIDg5LjQ5ODggODguNzMwMkM4MC43MTMyIDk4LjMzNDIgNzMuOTA1MiAxMDkuNTc1IDY5LjQ2MzYgMTIxLjgwOUM2NS4wMjIgMTM0LjA0NCA2My4wMzM4IDE0Ny4wMzUgNjMuNjEyNCAxNjAuMDM4QzY0LjE5MSAxNzMuMDQxIDY3LjMyNTIgMTg1LjgwMyA3Mi44MzU5IDE5Ny41OTVDNzguMzQ2NyAyMDkuMzg4IDg2LjEyNjEgMjE5Ljk3OSA5NS43MzAxIDIyOC43NjRDMTA1LjMzNCAyMzcuNTUgMTE2LjU3NCAyNDQuMzU4IDEyOC44MDkgMjQ4LjhDMTQxLjA0NCAyNTMuMjQxIDE1NC4wMzQgMjU1LjIyOSAxNjcuMDM4IDI1NC42NTFMMTY5LjUyMiAzMTAuNDc4WiIgZmlsbD0iI0RERTlGRiIvPgo8L3N2Zz4K"), /* ellipse 2 */
+    url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI5MjYiIHZpZXdCb3g9IjAgMCAxNjAwIDkyNiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2MDAgMEwwIDk5LjE1NDlWOTI2TDE2MDAgODI2Ljg0NVYwWiIgZmlsbD0iI0YxRjdGRiIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPC9zdmc+Cg=="); /* slanted_bg_rect */
+  background-position: 14% 86%, 88% 64%, 17% 44%, 81% 20%, left 3%, right 95%,
+    left top;
+  background-size: 2%, 1%, 2%, 1%, 20%, 14%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.stepIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.stepIconContainer img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stepImage {
+  height: 150px;
+}
+
+.stepText,
+.stepHeading {
+  text-align: center;
+}
+
+.stepContainer p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.stepText {
+  font-size: 1em;
+  color: #555;
+}
+
+.stepHeading {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.steps {
+  margin-top: 60px;
+}
+
+/* ## Features section */
+
+.featuresSection {
+  padding-bottom: 60px;
+}
+
+.featureImage {
+  width: 100%;
+  max-width: 500px;
+}
+
+.featureText {
+  color: #555;
+  max-width: 300px;
+  font-size: 0.8em;
+}
+
+.featureTitle {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* ## Industries section */
+
+.jobsSection {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: #f1f7ff;
+}
+
+.jobsSection h2 {
+  margin-bottom: 1em;
+}
+
+.jobPhotoContainer {
+  text-align: center;
+}
+
+.industriesPhoto {
+  width: 90%;
+  margin-top: 40px;
+}
+
+.jobPhotoContainer {
+  text-align: right;
+}
+
+/* ## Reviews section */
+
+.reviewSection {
+  padding-top: 80px;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.appStoreStarRating {
+  color: #555;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.reviewContainer {
+  height: 280px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 20px #ddd;
+}
+
+div.reviewContainerPadding {
+  padding: 20px;
+}
+
+p.reviewTitle {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+p.reviewBody {
+  margin-top: 10px;
+}
+
+.starImage {
+  height: 14px;
+}
+
+.starImage.large {
+  height: 16px;
+}
+
+/* ## Download GB section */
+
+.downloadSection {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: #f1f7ff;
+}
+
+.downloadSection h2 {
+  margin-bottom: 20px;
+}
+
+.downloadSection p {
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.downloadSection a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ## Footer section */
+
+.footerSection {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.footerSection img {
+  margin-bottom: 20px;
+}
+
+.footerSection p {
+  font-size: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+p.copyright {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+@media (max-width: 767.98px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+/* bigger than phone */
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  h2.leadingSectionTitle {
+    margin-bottom: 40px;
+  }
+
+  /* ## Header Section */
+
+  .row.headerSection {
+    text-align: left;
+  }
+
+  .topLogo {
+    height: 44px;
+  }
+
+  /* ## Hero Section */
+
+  .heroRow {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  .heroImage {
+    width: 100%;
+  }
+
+  .heroSubtext {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .heroButtonAndRatingCentered {
+    display: none;
+  }
+
+  .heroButtonAndRating {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .heroQuote {
+    margin-bottom: 0px;
+  }
+
+  /* ## 1,2,3 section */
+
+  .row.howItWorksSection {
+    padding: 100px 4rem;
+    background-position: 12% 90%, 71% 88%, 4% 64%, 92% 26%, left 2%, right 98%,
+      left top;
+    background-size: 1%, 1%, 0.5%, 0.5%, 10%, 7%, 100% 100%;
+  }
+
+  .howItWorksSection h2.leadingSectionTitle {
+    margin-bottom: 20px;
+  }
+
+  .steps {
+    margin-top: 30px;
+  }
+
+  .stepContainer {
+    background-color: #fff;
+    min-width: 175px;
+    max-width: 250px;
+    padding: 20px 0;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 5px 12px #eee;
+    border-radius: 15px;
+  }
+
+  .stepIconContainer {
+    margin-bottom: 20px;
+  }
+
+  .stepImage {
+    height: 105px;
+  }
+
+  .stepArrow {
+    display: block;
+    font-size: 36px;
+    color: #87b5fa;
+    text-align: center;
+  }
+
+  .stepHeading {
+    font-weight: normal;
+    height: 55px;
+  }
+
+  .stepText {
+    margin-bottom: 0;
+  }
+
+  /* ## Features section */
+
+  .featuresSection {
+    padding-top: 80px;
+  }
+
+  .featureTitle {
+    font-size: 1.1rem;
+  }
+
+  .featureText {
+    font-size: 0.9rem;
+    /* float: left; */
+    text-align: left;
+  }
+
+  /* ## Industries section */
+  .jobsSection {
+    text-align: left;
+    padding-bottom: 50px;
+    margin-top: 80px;
+  }
+
+  .jobsSection h2 {
+    margin-bottom: 1rem;
+  }
+
+  .jobPhotoContainer {
+    text-align: left;
+  }
+
+  .industriesPhoto {
+    float: right;
+    margin-top: 0px;
     width: 80%;
-    margin: 40px auto;
-    text-align: center;
+  }
+
+  /* ## Review section */
+  .reviewSection {
+    margin-top: 80px;
+  }
+
+  div.reviewContainer {
+    height: 300px;
+  }
+
+  /* ## Footer section */
+  .footerSection {
+    text-align: left;
+  }
 }
 
-div.fullLogoImage {
-    background: url('../img/giggy_bank_logo.svg') no-repeat center center scroll;
-    background-size: 340px 106px;
-    width: 400px;
+/* bigger than tablet */
+@media (min-width: 992px) {
+
+  html {
+    font-size: 16px;
+  }  
+
+  /* ## Hero section */
+
+  .heroButtonAndRatingCentered {
+    display: none;
+  }
+
+  /* ## 1,2,3 section */
+
+  .row.howItWorksSection {
+    padding: 100px;
+    background-position: 12% 90%, 71% 88%, 4% 64%, 94% 30%, left -1%, right 100%,
+      left top;
+  }
+
+  .stepContainer {
+    padding: 40px 20px;
+    border-radius: 15px;
+  }
+
+  .stepIconContainer {
+    margin-bottom: 30px;
+  }
+
+  .stepImage {
     height: 125px;
-    margin: 20px auto 70px auto;
+  }
+
+  .stepArrow {
+    font-size: 50px;
+  }
+
+  /* ## Features section */
+  .row.featuresSection {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .featureTitle {
+    font-size: 1.5rem;
+  }
+
+  .featureText {
+    font-size: 1rem;
+  }
 }
 
-.jumbotron p.freeTrialText {
-    margin-top: 2em;
-    margin-bottom: 1em;
+@media (min-width: 1200px) {
+  .row.howItWorksSection {
+    padding: 125px 160px;
+  }
 }
 
-p.centeredText.freeDescription {
-    margin-top: 2em;
-    margin-bottom: 1em;
-}
-
-.valueProps p {
-    padding: 0 0.5em;
-}
-
-.valueProps h3 {
-    margin-bottom: 1em;
-}
-
-.valueProps h3, .valueProps p {
-    text-align: center;
-}
-
-div.featureImage {
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: 10px auto;
-    width: 250px;
-    height: 250px;
-}
-
-@media(max-width:1200px) {
-    div.featureImage {
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 10px auto;
-        width: 225px;
-        height: 225px;
-    }
-
-    div.fileBoxImage {
-        background-image: url('../img/File Box.png');
-        background-size: 218px 182px;
-    }
-
-    div.fileStackImage {
-        background-image: url("../img/File Stack.png");
-        background-size: 196px 173px;
-    }
-
-    div.chartImage {
-        background-image: url('../img/Charts.png');
-        background-size: 211px 165px;
-    }
-    
-    div.fullLogoImage {
-        background-size: 300px 100px;
-        width: 300px;
-        height: 100px;
-        margin: 75px auto 40px auto;
-    }
-
-    h2.tagline {
-        font-size: 2.6em;
-    }
-
-    body {
-        font-size: 16px;
-    }
-
-    p {
-        margin: 1em auto;
-    }
-
-    div.heroScreenshot {
-        margin-right: auto;
-    }
-
-}
-
-/*iPhone 6 landscape and phone layout cutoff*/
-@media(max-width:767px) {
-
-    h2.tagline {
-        font-size: 2.7em;
-    }
-
-    .container .jumbotron {
-        padding-bottom: 15px;
-    }
-
-    div.fullLogoImage {
-        background-size: 250px 68px;
-        width: 250px;
-        height: 68px;
-        margin: 0 auto;
-    }
-
-    div.heroScreenshot {
-        display: none;
-    }
-
-    div.heroScreenshotCel {
-        display: block;
-    }
-
-    p.freeTrialText {
-        margin-top: 20px;
-    }
-}
-
-/*iPhone 6 Plus*/
-@media(max-width:414px) {
-    body {
-        font-size: 14px;
-    }
-
-    h2.tagline {
-        font-size: 2.4em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-    }
-
-
-    ul {
-        padding-left: 20px;
-    }
-
-    p.centeredText {
-        width: 100%;
-    }
-
-    div.heroScreenshotCel {
-        width: 185px;
-        height: 380px;
-        margin: 20px auto;
-    }
-
-    .jumbotron p.freeTrialText {
-        font-size: 1.2em;
-    }
-
-}
-
-/* iPhone SE */
-@media(max-width:320px) {
-    body {
-        margin-top: 20px;
-    }
-
-    body {
-        font-size: 13px;
-    }
-
-    .jumbotron p.freeTrialText {
-        font-size: 1.1em;
-    }
-
-    h2.tagline {
-        font-size: 2.8em;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    h3.secondaryValueProp {
-            font-size: 1.5em;
-    }
-
-    a.appStoreButton.large {
-        width: 165px;
-        height: 49px;
-    }
-
-    .container .jumbotron {
-        padding: 20px 15px 15px 15px;
-        min-height: 400px;
-    }
-
-    div.fullLogoImage {
-        background-size: 158px 61px;
-        width: 158px;
-        height: 61px;
-    }
-
-    div.heroScreenshotCel {
-        width: 150px;
-        height: 308px;
-    }
+@media (min-width: 1400px) {
+  .row.howItWorksSection {
+    padding: 125px 235px;
+    background-position: 17% 90%, 68% 87%, 8% 64%, 90% 33%, left -5%, right 101%,
+      left top;
+    background-size: 1%, 1%, 0.5%, 0.5%, 10%, 7%, 100% 100%;
+  }
 }
