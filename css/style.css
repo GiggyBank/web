@@ -44,21 +44,21 @@ a.appStoreButton.large {
 .row.headerSection {
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .subheading {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .topLogo {
-  height: 64px;
+  height: 48px;
 }
 
 /* ## Hero Section */
 
 .heroRow {
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 40px;
   text-align: center;
 }
