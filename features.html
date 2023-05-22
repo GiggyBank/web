@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Giggy Bank - Feature List">
+  <meta http-equiv="Cache-control" content="max-age=2592000">
+
+  <title>Giggy Bank - Feature List</title>
+
+  <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTEWN4VPBS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JTEWN4VPBS');
+  </script>
+
+  <script>
+    function getURLParameter(name) {
+      return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+    }
+
+    function handleAppStoreButtonClicks(event) {
+
+      var urlCid = getURLParameter('cid')
+      var cid = (urlCid != null && urlCid != "") ? urlCid : 'hmpg'
+
+      var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1325116730?pt=118908438&ct=" + cid + "&mt=8"
+
+      gtag('event', 'click', {
+        'event_category': 'Outbound Link',
+        'event_label': cid,
+        'value': 1
+      });
+
+      window.open(appStoreUrl)
+    }
+  </script>
+
+  <style>
+    div.callout {
+      background-color: #f1f7ff;
+      padding: 1em;
+      margin: 1em;
+      border-radius: 1em;
+      font-size: 0.8em;
+    }
+
+    div.callout .icon {
+      float: left;
+      font-size: 1.5em;
+    }
+    
+    p.footnote {
+      margin-left: 1rem;
+      font-size: 0.7em;
+      font-style: italic;
+    }
+
+    ul.featureList {
+      margin-top: 2rem;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row headerSection">
+      <div class="col-12">
+        <img src="img/logo.svg" class="topLogo" />
+        <h1>Feature List</h1>
+        &nbsp;
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p>Giggy Bank packs a ton of functionality into a surprisingly simple package!</p>
+
+        <h3>Track Gigs and Payments</h3>        
+
+        <div class="callout">
+          <h6><span class="icon">⚡️</span>Giggy Bank users average under 10 seconds to enter an activity. *</h6>
+          <br>
+          In your pocket and super quick, Giggy Bank lets you track your business as it happens. No need to remember to do it later.
+        </div>
+        <p class="footnote">* We measured! Active users average 9.9 seconds to add a gig and 8.5 seconds to add a payment.</p>
+
+        <ul class="featureList">
+          <li>
+            <h6>🧠 Smart Forms</h6>
+            <p>Helpful features like smart autocomplete and inline client creation make data entry a breeze and save you time so you can focus on your work.</p>
+          </li>
+          <li>
+            <h6>🔄 Recurring Gigs</li>h6>
+            <p>Set any gig to recur on a weekly or monthly basis with a single tap.</p>
+          </li>
+          <li>
+            <h6>🧾 Billable Expenses</h6>
+            <p>Sometimes work requires materials that your client should pay for. No sweat! Giggy Bank easily bills these expenses to your clients and tracks cost and markup for you.</p>
+          </li>
+          <li>
+            <h6>💸 Custom Payment Methods</h6>
+            <p>Track payments by cash, card, and check by default or add any other payment method that you need (i.e. Venmo). Payment methods are fully customizable.</p>
+          </li>
+          <li>
+            <h6>⏱️ Hourly and Flat Rate Gigs</h6>
+            <p>Hourly or flat rate, Giggy Bank supports both ways of tracking your time.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row graphicBgSection" style="margin-top: -35px;"">
+      <div class="col-12">
+        <h3>Do Business Like a Pro</h3>
+
+        Stay on top of your business and communicate with your clients using professional documents branded with your own logo. You'll be surprised how easy it can be!
+
+        <ul class="featureList">
+          <li>
+            <h6>🔔 Payment Reminders</h6>
+            <p>Giggy Bank calls out gigs that have remained unpaid for longer than you'd like.</p>
+          </li>
+          <li>
+            <h6>📬 Bill Clients and Send Receipts</h6>
+            <p>Bill your clients by sending a professional statement in just a few seconds or give them a record of their payment by sending a receipt. Customizable with your logo and contact details, now you can bill like a pro! </p>
+          </li>
+          <li>
+            <h6>🗓️ Calendar View</h6>
+            <p>Get a quick look at all of your activity for any day of the year.</p>
+          </li>
+          <li>
+            <h6>🗂️ Customer Overview</h6>
+            <p>See all clients with an outstanding balance at a glance and quickly identify payments that are overdue.</p>
+          </li>
+          <li>
+            <h6>👤 Manage Client Contacts</h6>
+            <p>Keep all your client contact info in one place. Easily email, call, or get directions to your clients.</p>
+          </li>
+          <li>
+            <h6>📊 Payment Reports</h6>
+            <p>Graphical payment reports that are incredibly easy to use. Get the earnings numbers that you need for tax time and get the insight you need to really know how your business is performing.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: -120px;">
+      <div class="col-12">
+        <h3>Access Your Data Safely, Anywhere</h3>
+        It doesn't get much more secure than Giggy Bank. Giggy Bank uses several key technologies provided by iOS and the Apple ecosystem to keep your data safe.
+
+        <ul class="featureList">
+          <li>
+            <h6>💾 Local Data</h6>
+            <p>Giggy Bank's data is stored on your device, making you the only one with access to your sensitive business data.</p>
+          </li>
+          <li>
+            <h6>🏝️ Offline Access</h6>
+            <p>Giggy Bank is always accessible, with or without an internet connection.</p>
+          </li>
+          <li>
+            <h6>🔒 iOS Encryption</h6>
+            <p>Giggy Bank uses iOS to keep data encrypted at all times while the app is not open.</p>
+          </li>
+          <li>
+            <h6>🗃️ Backup</h6>
+            <p>
+              Giggy Bank is easily backed up, securely and automatically, using iCloud. <a href="https://support.apple.com/en-us/HT202303" target="_blank">learn more</a>
+            </p>
+          </li>
+          <li>
+            <h6>👁️ Biometric and PIN Lock</h6>
+            <p>
+              Lock Giggy Bank using FaceID, TouchID, or a simple PIN for an additional layer of security against prying eyes.
+            </p>
+          </li>
+          <li>
+            <h6>📤 Export</h6>
+            <p>
+              Export some or all of your transactions to CSV. This is a handy way to send your data to an accountant, create your own backups, or do pretty much anything else with your data!
+            </p>
+          </li>  
+        </ul>
+      </div>
+    </div>
+
+    <div class="row downloadSection px-5">
+      <div class="col-12"><h2>Download Giggy Bank</h2></div>
+      <div class="col-12"><p>Track unlimited gigs and payments for up to ten clients for FREE!</p></div>
+      <div class="col-12"><a class="appStoreButton large" onclick="handleAppStoreButtonClicks(event)"></a></div>
+    </div>
+
+    <div class="row footerSection">
+      <div class="col-md-5"><img src="img/logo.svg" height="47px"/></div>
+      <div class="col-md-3">
+        <p>Contact us</p>
+        <p><a href="mailto:support@giggybankapp.com" target="_blank">support@giggybankapp.com</a></p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <p>Legal</p>
+        <p><a href="legal/terms.html">Terms of Use</a></p>
+        <p><a href="legal/privacy.html">Privacy Policy</a></p>
+      </div>
+    </div>
+    <p class="copyright">&copy;2018 Giggy Apps LLC</p>
+  </div>
+  
+
+</body>
+
+</html>
