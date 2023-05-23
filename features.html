@@ -25,13 +25,18 @@
 
   <script>
     function getURLParameter(name) {
-      return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name)
     }
 
-    function handleAppStoreButtonClicks(event) {
-
+    function getCid() {
       var urlCid = getURLParameter('cid')
-      var cid = (urlCid != null && urlCid != "") ? urlCid : 'hmpg'
+      return (urlCid != null && urlCid != "") ? urlCid : 'features' 
+    }
+
+    function handleAppStoreButtonClicks(event) {      
+
+      let cid = getCid() 
 
       var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1325116730?pt=118908438&ct=" + cid + "&mt=8"
 
@@ -76,7 +81,7 @@
 
     <div class="row headerSection">
       <div class="col-12">
-        <a href="index.html"><img src="img/logo.svg" class="topLogo" /></a>
+        <a href="index.html" class="attributableLink"><img src="img/logo.svg" class="topLogo" /></a>
         <h1>Feature List</h1>
         &nbsp;
       </div>
@@ -206,7 +211,7 @@
     </div>
 
     <div class="row footerSection">
-      <div class="col-md-5"><a href="index.html"><img src="img/logo.svg" height="47px"/></a></div>
+      <div class="col-md-5"><a href="index.html" class="attributableLink"><img src="img/logo.svg" height="47px"/></a></div>
       <div class="col-md-3">
         <p>Contact us</p>
         <p><a href="mailto:support@giggybankapp.com" target="_blank">support@giggybankapp.com</a></p>
@@ -221,7 +226,13 @@
     <p class="copyright">&copy;2018 Giggy Apps LLC</p>
   </div>
   
-
+  <script>
+    var attributableLinks = document.querySelectorAll('.attributableLink');
+    for (var i = 0; i < attributableLinks.length; i++) {
+      const cid = getCid()
+      attributableLinks[i].href += attributableLinks[i].href.indexOf('?') != -1 ? "&cid=" + cid  : "?cid=" + cid;
+    }
+  </script>
 </body>
 
 </html>

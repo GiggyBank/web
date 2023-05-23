@@ -24,8 +24,10 @@
   </script>
 
   <script>
+
     function getURLParameter(name) {
-      return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name)
     }
 
     function getCid() {
@@ -35,7 +37,9 @@
 
     function handleAppStoreButtonClicks(event) {      
 
-      var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1325116730?pt=118908438&ct=" + getCid() + "&mt=8"
+      let cid = getCid() 
+
+      var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1325116730?pt=118908438&ct=" + cid + "&mt=8"
 
       gtag('event', 'click', {
         'event_category': 'Outbound Link',
@@ -45,8 +49,6 @@
 
       window.open(appStoreUrl)
     }
-
-    console.log("doin it")
   </script>
 
 </head>
@@ -378,7 +380,7 @@
         </div>
     </div>
 
-    <p class="featureLinkContainer"><a id="featuresLink" href="features.html" target="_blank">Explore All Giggy Bank Features</a></p>
+    <p class="featureLinkContainer"><a class="attributableLink" href="features.html" target="_blank">Explore All Giggy Bank Features</a></p>
 
     <div class="row align-items-center jobsSection px-5">
       <div class="col-md-5">
@@ -471,9 +473,13 @@
     </div>
   </div>
   <p class="copyright">&copy;2018 Giggy Apps LLC</p>
-  
+
   <script>
-    document.getElementById("featuresLink").href = "features.html?cid="+getCid()
+    var attributableLinks = document.querySelectorAll('.attributableLink');
+    for (var i = 0; i < attributableLinks.length; i++) {
+      const cid = getCid()
+      attributableLinks[i].href += attributableLinks[i].href.indexOf('?') != -1 ? "&cid=" + cid  : "?cid=" + cid;
+    }
   </script>
 </body>
 
