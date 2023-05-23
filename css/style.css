@@ -178,6 +178,12 @@ a.appStoreButton.large {
   font-size: 1.1em;
 }
 
+.featureLinkContainer {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+  
 /* ## Industries section */
 
 .jobsSection {
@@ -429,6 +435,10 @@ p.copyright {
     text-align: left;
   }
 
+  .featureLinkContainer {
+    display: none;
+  }
+  
   /* ## Industries section */
   .jobsSection {
     text-align: left;

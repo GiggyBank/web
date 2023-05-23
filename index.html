@@ -28,12 +28,14 @@
       return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
     }
 
-    function handleAppStoreButtonClicks(event) {
-
+    function getCid() {
       var urlCid = getURLParameter('cid')
-      var cid = (urlCid != null && urlCid != "") ? urlCid : 'hmpg'
+      return (urlCid != null && urlCid != "") ? urlCid : 'hmpg' 
+    }
 
-      var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1325116730?pt=118908438&ct=" + cid + "&mt=8"
+    function handleAppStoreButtonClicks(event) {      
+
+      var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1325116730?pt=118908438&ct=" + getCid() + "&mt=8"
 
       gtag('event', 'click', {
         'event_category': 'Outbound Link',
@@ -43,6 +45,8 @@
 
       window.open(appStoreUrl)
     }
+
+    console.log("doin it")
   </script>
 
 </head>
@@ -374,6 +378,8 @@
         </div>
     </div>
 
+    <p class="featureLinkContainer"><a id="featuresLink" href="features.html" target="_blank">Explore All Giggy Bank Features</a></p>
+
     <div class="row align-items-center jobsSection px-5">
       <div class="col-md-5">
           <h2>Built for your one-person service business.</h2>
@@ -465,7 +471,10 @@
     </div>
   </div>
   <p class="copyright">&copy;2018 Giggy Apps LLC</p>
-
+  
+  <script>
+    document.getElementById("featuresLink").href = "features.html?cid="+getCid()
+  </script>
 </body>
 
 </html>
