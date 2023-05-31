@@ -24,7 +24,7 @@ h2.leadingSectionTitle {
 }
 
 h3 {
-  padding: 1rem;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -66,6 +66,11 @@ a.appStoreButton.large {
   height: 48px;
 }
 
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* ## Hero Section */
 
 .heroRow {
@@ -101,7 +106,8 @@ a.appStoreButton.large {
 
 .row.graphicBgSection {
   padding-top: 120px;
-  padding-bottom: 200px;
+  padding-bottom: 120px;
+  margin-bottom: 20px;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjUgMjFDNC43MDEwMSAyMSAwIDE2LjI5OSAwIDEwLjVDMCA0LjcwMTAxIDQuNzAxMDEgMCAxMC41IDBDMTYuMjk5IDAgMjEgNC43MDEwMSAyMSAxMC41QzIxIDE2LjI5OSAxNi4yOTkgMjEgMTAuNSAyMVoiIGZpbGw9IiNGRjFGMUYiLz4KPC9zdmc+Cg=="), /* red circle*/
     url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjUgMjFDNC43MDEwMSAyMSAwIDE2LjI5OSAwIDEwLjVDMCA0LjcwMTAxIDQuNzAxMDEgMCAxMC41IDBDMTYuMjk5IDAgMjEgNC43MDEwMSAyMSAxMC41QzIxIDE2LjI5OSAxNi4yOTkgMjEgMTAuNSAyMVoiIGZpbGw9IiMyQkQ2N0IiLz4KPC9zdmc+Cg=="), /* green circle */
     url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjUgMjFDNC43MDEwMSAyMSAwIDE2LjI5OSAwIDEwLjVDMCA0LjcwMTAxIDQuNzAxMDEgMCAxMC41IDBDMTYuMjk5IDAgMjEgNC43MDEwMSAyMSAxMC41QzIxIDE2LjI5OSAxNi4yOTkgMjEgMTAuNSAyMVoiIGZpbGw9IiMyQkQ2N0IiLz4KPC9zdmc+Cg=="), /* green circle */
@@ -230,7 +236,7 @@ div.reviewContainer {
   height: 280px;
   margin-bottom: 20px;
   border-radius: 5px;
-  box-shadow: 0px 3px 20px #ddd;
+  box-shadow: 0px 8px 12px #efefef;
 }
 
 div.reviewContainerPadding {
@@ -319,6 +325,9 @@ p.copyright {
     margin-bottom: 40px;
   }
 
+  h3 {
+    text-align: left;
+  }
   /* ## Header Section */
 
   .row.headerSection {
@@ -329,11 +338,15 @@ p.copyright {
     height: 44px;
   }
 
+  /* .row {
+    padding-left: 50px;
+    padding-right: 50px;
+  } */
+
   /* ## Hero Section */
 
   .heroRow {
     text-align: left;
-    margin-bottom: 60px;
   }
 
   .heroImage {
@@ -364,7 +377,9 @@ p.copyright {
   /* ## 1,2,3 section */
 
   .row.graphicBgSection {
-    padding: 100px 4rem;
+    margin-top: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-position: 12% 90%, 71% 88%, 4% 64%, 92% 26%, left 2%, right 98%,
       left top;
     background-size: 1%, 1%, 0.5%, 0.5%, 10%, 7%, 100% 100%;
@@ -434,10 +449,6 @@ p.copyright {
     /* float: left; */
     text-align: left;
   }
-
-  .featureLinkContainer {
-    display: none;
-  }
   
   /* ## Industries section */
   .jobsSection {
@@ -487,11 +498,12 @@ p.copyright {
   .heroButtonAndRatingCentered {
     display: none;
   }
-
+  
   /* ## 1,2,3 section */
 
   .row.graphicBgSection {
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-position: 12% 90%, 71% 88%, 4% 64%, 94% 30%, left -1%, right 100%,
       left top;
   }
@@ -529,14 +541,24 @@ p.copyright {
 }
 
 @media (min-width: 1200px) {
+  .row {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
   .row.graphicBgSection {
-    padding: 125px 160px;
+    padding-top: 125px;
+    padding-bottom: 125px;
   }
 }
 
 @media (min-width: 1400px) {
+  .row {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
   .row.graphicBgSection {
-    padding: 125px 235px;
     background-position: 17% 90%, 68% 87%, 8% 64%, 90% 33%, left -5%, right 101%,
       left top;
     background-size: 1%, 1%, 0.5%, 0.5%, 10%, 7%, 100% 100%;

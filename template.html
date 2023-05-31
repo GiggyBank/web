@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Giggy Bank - {{TITLE}}">
+  <meta http-equiv="Cache-control" content="max-age=2592000">
+
+  <title>Giggy Bank - {{TITLE}}</title>
+
+  <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .content {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row headerSection" >
+      <div class="col">
+        <img src="img/logo.svg" class="topLogo" />
+      </div>
+    </div>
+
+    <div class="row heroRow align-items-center">
+      <div class="col">
+        hero
+      </div>
+        <!-- <img src="img/hero.png" class="heroImage" /> -->
+    </div>
+
+    <div class="row graphicBgSection">
+      <p class="content">Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. </p>
+    </div>
+
+    <div class="row">
+      <p class="content">Content.</p>
+    </div>
+
+  <div class="row downloadSection px-5 chrome">
+    <div class="col-12"><h2>Download Giggy Bank</h2></div>
+    <div class="col-12"><p>Track unlimited gigs and payments for up to ten clients for FREE!</p></div>
+    <div class="col-12"><a class="appStoreButton large" onclick="handleAppStoreButtonClicks(event)"></a></div>
+  </div>
+
+  <div class="row footerSection chrome">
+    <div class="col-md-5"><img src="img/logo.svg" height="47px"/></div>
+    <div class="col-md-3">
+      <p>Contact us</p>
+      <p><a href="mailto:support@giggybankapp.com" target="_blank">support@giggybankapp.com</a></p>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <p>Legal</p>
+      <p><a href="legal/terms.html">Terms of Use</a></p>
+      <p><a href="legal/privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+  <p class="copyright">&copy;2018 Giggy Apps LLC</p>
+
+  <script>
+    var attributableLinks = document.querySelectorAll('.attributableLink');
+    for (var i = 0; i < attributableLinks.length; i++) {
+      const cid = getCid()
+      attributableLinks[i].href += attributableLinks[i].href.indexOf('?') != -1 ? "&cid=" + cid  : "?cid=" + cid;
+    }
+  </script>
+</body>
+
+</html>

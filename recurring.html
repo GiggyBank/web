@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Giggy Bank - How To Create Recurring Gigs">
+  <meta http-equiv="Cache-control" content="max-age=2592000">
+
+  <title>Giggy Bank - How To Create Recurring Gigs</title>
+
+  <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTEWN4VPBS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JTEWN4VPBS');
+  </script>
+
+  <script>
+    function getURLParameter(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name)
+    }
+
+    function getCid() {
+      var urlCid = getURLParameter('cid')
+      return (urlCid != null && urlCid != "") ? urlCid : 'recurring' 
+    }
+
+    function handleAppStoreButtonClicks(event) {      
+
+      let cid = getCid() 
+
+      var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1325116730?pt=118908438&ct=" + cid + "&mt=8"
+
+      gtag('event', 'click', {
+        'event_category': 'Outbound Link',
+        'event_label': cid,
+        'value': 1
+      });
+
+      window.open(appStoreUrl)
+    }
+  </script>
+
+  <style>
+    div.callout {
+      background-color: #f1f7ff;
+      padding: 1.3em;
+      margin: 1em;
+      border-radius: 1em;
+      font-size: 0.8em;
+    }
+
+    div.callout h6 {
+      margin-left: 1rem;
+    }
+
+    div.callout .icon {
+      float: left;
+      padding-right: 0.5rem;
+      font-size: 1.5em;
+    }
+
+    ul.featureList {
+      margin-top: 2rem;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row headerSection">
+      <div class="col-12">
+        <a href="index.html" class="attributableLink chrome"><img src="img/logo.svg" class="topLogo" /></a>
+        <h1>How To Create Recurring Gigs</h1>
+        &nbsp;
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <p>Got weekly or monthly recurring appointments? Set up Giggy Bank to add them automatically with just a few taps.</p>
+
+            <h3 class="d-md-none">Make any gig recurring</h3> 
+        </div>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-6">    
+            <h3 class="mobile-hidden">Make any gig recurring</h3>
+            <ol>
+                <li>Create a gig as you normally would. <!--a href="#">learn more</a--></li>
+                <li>Tap the button and set the gig to repeat weekly or monthly.</li>
+            </ol>
+        </div>
+        <div class="col-6">    
+            <img src="img/recurring_toggle.png" style="width: 100%"/>  
+        </div>
+    </div> 
+
+    <div class="row graphicBgSection align-items-center" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="col-12">
+            <h3 class="d-md-none">Approve gigs as they come up</h3>
+        </div>
+        <div class="col-6">
+            <img src="img/recurring_approve_pending.png" style="width: 100%;"/>
+        </div>
+        <div class="col-6">
+            <h3 class="mobile-hidden">Approve gigs as they come up</h3>
+            <p>Giggy Bank will prompt you to review and approve your recurring gigs when their time comes.</p>
+        </div> 
+    </div>
+
+    <div class="row align-items-center" style="padding-top: 20px; padding-bottom: 40px;">
+      <div class="col-12">
+        <h3 class="d-md-none">Manage your recurring gigs</h3>
+      </div>
+      <div class="col-6">
+        <h3 class="mobile-hidden">Manage your recurring gigs</h3>
+        <p>Tap "recurring gigs" on the settings screen to see all of your recurring gigs and stop any that you no longer need.  
+      </div>
+      <div class="col-6">
+        <img src="img/recurring_manage.png" style="width: 100%;"/>
+      </div>
+    </div>
+
+    <p class="featureLinkContainer chrome" style="margin-top: 20px;"><a class="attributableLink" href="features.html">Explore All Giggy Bank Features</a></p>
+
+    <div class="row downloadSection px-5 chrome">
+      <div class="col-12"><h2>Download Giggy Bank</h2></div>
+      <div class="col-12"><p>Track unlimited gigs and payments for up to ten clients for FREE!</p></div>
+      <div class="col-12"><a class="appStoreButton large" onclick="handleAppStoreButtonClicks(event)"></a></div>
+    </div>
+
+    <div class="row footerSection chrome">
+      <div class="col-md-5"><a href="index.html" class="attributableLink"><img src="img/logo.svg" height="47px"/></a></div>
+      <div class="col-md-3">
+        <p>Contact us</p>
+        <p><a href="mailto:support@giggybankapp.com" target="_blank">support@giggybankapp.com</a></p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <p>Legal</p>
+        <p><a href="legal/terms.html">Terms of Use</a></p>
+        <p><a href="legal/privacy.html">Privacy Policy</a></p>
+      </div>
+    </div>
+    <p class="copyright chrome">&copy;2018 Giggy Apps LLC</p>
+  </div>
+  
+  <script>
+    var attributableLinks = document.querySelectorAll('.attributableLink');
+    for (var i = 0; i < attributableLinks.length; i++) {
+      const cid = getCid()
+      attributableLinks[i].href += attributableLinks[i].href.indexOf('?') != -1 ? "&cid=" + cid  : "?cid=" + cid;
+    }
+    
+    if(getURLParameter("noChrome") == "true") { 
+      const layoutElements = document.querySelectorAll('.chrome');
+      layoutElements.forEach(element => {
+        element.style.display = 'none'
+      });
+    }
+  </script>
+</body>
+
+</html>
