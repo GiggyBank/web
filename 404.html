@@ -1,13 +1,121 @@
----
-permalink: /404.html
----
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <title>We couldn't find that page.</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Giggy Bank - ">
+  <meta http-equiv="Cache-control" content="max-age=2592000">
+
+  <title>Giggy Bank - </title>
+
+  <link rel="shortcut icon" type="image/jpg" href="/img/favicon.png"/>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTEWN4VPBS"></script>
+  <script>
+    if(window.location.origin.includes("giggybankapp.com")) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JTEWN4VPBS');
+    }
+  </script>
+
+  <script>
+    function getURLParameter(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name)
+    }
+
+    function getCid() {
+      var urlCid = getURLParameter('cid')
+      return (urlCid != null && urlCid != "") ? urlCid : '' 
+    }
+
+    function handleAppStoreButtonClicks(event) {      
+
+      let cid = getCid() 
+
+      var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1325116730?pt=118908438&ct=" + cid + "&mt=8"
+
+      gtag('event', 'click', {
+        'event_category': 'Outbound Link',
+        'event_label': cid,
+        'value': 1
+      });
+
+      window.open(appStoreUrl)
+    }
+  </script>
+
 </head>
+
 <body>
-  <p>
-    The page was not found.  Please check the URL and try again.
-  </p>
+  <div class="container">
+    <div class="row headerSection" >
+      <div class="col-md-12">
+        <a href="index.html" class="attributableLink chrome"><img src="/img/logo.svg" class="topLogo" alt="logo linking to home"/></a>
+      </div>
+    </div>
+
+    <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+ 
+
+    <div class="row footerSection">
+      <div class="col-md-5"><img src="/img/logo.svg" height="47px" alt=""/></div>
+      <div class="col-md-3">
+        <p>Contact us</p>
+        <p><a href="mailto:support@giggybankapp.com" target="_blank">support@giggybankapp.com</a></p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <p>Legal</p>
+        <p><a href="/legal/terms.html">Terms of Use</a></p>
+        <p><a href="/legal/privacy.html">Privacy Policy</a></p>
+      </div>
+    </div>
+  </div>
+
+  <p class="copyright">&copy;2018 Giggy Apps LLC</p>
+
+  <script>
+    var attributableLinks = document.querySelectorAll('.attributableLink');
+    for (var i = 0; i < attributableLinks.length; i++) {
+      const cid = getCid()
+      attributableLinks[i].href += attributableLinks[i].href.indexOf('?') != -1 ? "&cid=" + cid  : "?cid=" + cid;
+    }
+
+    if(getURLParameter("nochrome") == "true") { 
+      const layoutElements = document.querySelectorAll('.chrome');
+      layoutElements.forEach(element => {
+        element.style.display = 'none'
+      });
+    }
+  </script>
 </body>
+
+</html>
+

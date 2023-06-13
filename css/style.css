@@ -185,9 +185,16 @@ a.appStoreButton.large {
 }
 
 .featureLinkContainer {
+  padding: 40px 0;
   text-align: center;
-  margin-top: -10px;
-  margin-bottom: 40px;
+}
+
+.featureLinkContainer a {
+  border: 2px solid #216ACC;
+  padding: 14px 2rem;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #216ACC;
 }
   
 /* ## Industries section */

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Giggy Bank - How To Track Work And Earnings">
+  <meta http-equiv="Cache-control" content="max-age=2592000">
+
+  <title>Giggy Bank - How To Track Work And Earnings</title>
+
+  <link rel="shortcut icon" type="image/jpg" href="/img/favicon.png"/>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTEWN4VPBS"></script>
+  <script>
+    if(window.location.origin.includes("giggybankapp.com")) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JTEWN4VPBS');
+    }
+  </script>
+
+  <script>
+    function getURLParameter(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name)
+    }
+
+    function getCid() {
+      var urlCid = getURLParameter('cid')
+      return (urlCid != null && urlCid != "") ? urlCid : 'workandpay' 
+    }
+
+    function handleAppStoreButtonClicks(event) {      
+
+      let cid = getCid() 
+
+      var appStoreUrl = "https://itunes.apple.com/app/apple-store/id1325116730?pt=118908438&ct=" + cid + "&mt=8"
+
+      gtag('event', 'click', {
+        'event_category': 'Outbound Link',
+        'event_label': cid,
+        'value': 1
+      });
+
+      window.open(appStoreUrl)
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row headerSection" >
+      <div class="col-md-12">
+        <a href="index.html" class="attributableLink chrome"><img src="/img/logo.svg" class="topLogo" alt="logo linking to home"/></a>
+      </div>
+    </div>
+
+    <div class="row headerSection">
+    <div class="col-12">
+        <h1>How To Track Work And Earnings</h1>
+        &nbsp;
+    </div>
+</div>
+  
+<div class="row">
+    <div class="col-12">
+        <p>Giggy Bank is designed from the bottom up for ease of use so you always know who owes you and how much you've earned.</p>
+    </div>
+</div>
+<div class="row align-items-center">
+    <div class="col-md-1"></div>
+    <div class="col-sm-12 col-md-5">
+        <h3>You Do This</h3>
+        <div style="margin-bottom: 20px;">
+            <p>
+                1. Enter "gigs" to track work done.<br>
+                2. Enter payments when you get paid.
+            </p>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 text-center">
+        <img src="img/gigpayform.png" width="90%"/>
+    </div>
+    <div class="col-12 mobile-hidden" style="padding-top: 4rem;">
+        It really is that easy! Giggy Bank uses your entries to calculate client balances, tell you how much you've been paid, and provide a TON of other useful functionality...
+    </div>
+</div>
+<div class="row graphicBgSection align-items-center" style="padding-top: 100px;">
+        <div class="col-md-1"></div>
+
+        <div class="col-xs-12 col-md-5" style="padding-right: 30px;">
+            <h3>Giggy Bank Does The Rest!</h3>     
+
+            <p class="d-md-none" styl="margin-bottom: 2rem">
+                It really is that easy! Giggy Bank uses your entries to calculate client balances, tell you how much you've been paid, and provide a TON of other useful functionality...
+            </p>
+
+            <ol style="margin-bottom: 20px; list-style-type: none; padding-left: 0;">
+                <li class="mobile-hidden">✅ Tracks client balances</li>
+                <li class="mobile-hidden">✅ Calculates your earnings</li>
+                <li>✅ Manages your service list</li>
+                <li>✅ Automates recurring gigs</li>
+                <li>✅ Highlights late payments</li>
+                <li>✅ Tracks billable expenses</li>
+                <li>✅ Sends statements and receipts</li>
+                <li>... and more!</li>
+            </ol>
+        </div>
+
+        <div class="col-12 d-md-none">
+            <div class="featureLinkContainer" style="width: 300px; margin: 30px auto;"><a class="attributableLink" href="features.html">Explore All Giggy Bank Features</a></div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 text-center" style="margin-top: 30px;">
+            <img src="img/features.png" width="100%"/>
+        </div>
+
+        <div class="col-12 mobile-hidden " style="padding-top: 4rem;">
+            <div class="featureLinkContainer" style="width: 300px; margin: 40px auto;"><a class="attributableLink" href="features.html">Explore All Giggy Bank Features</a></div>
+        </div>
+</div>
+
+<div class="row downloadSection px-5 chrome">
+    <div class="col-12"><h2>Download Giggy Bank</h2></div>
+    <div class="col-12"><p>Track unlimited gigs and payments for up to ten clients for FREE!</p></div>
+    <div class="col-12"><a class="appStoreButton large" onclick="handleAppStoreButtonClicks(event)"></a></div>
+</div> 
+
+    <div class="row footerSection">
+      <div class="col-md-5"><img src="/img/logo.svg" height="47px" alt=""/></div>
+      <div class="col-md-3">
+        <p>Contact us</p>
+        <p><a href="mailto:support@giggybankapp.com" target="_blank">support@giggybankapp.com</a></p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <p>Legal</p>
+        <p><a href="/legal/terms.html">Terms of Use</a></p>
+        <p><a href="/legal/privacy.html">Privacy Policy</a></p>
+      </div>
+    </div>
+  </div>
+
+  <p class="copyright">&copy;2018 Giggy Apps LLC</p>
+
+  <script>
+    var attributableLinks = document.querySelectorAll('.attributableLink');
+    for (var i = 0; i < attributableLinks.length; i++) {
+      const cid = getCid()
+      attributableLinks[i].href += attributableLinks[i].href.indexOf('?') != -1 ? "&cid=" + cid  : "?cid=" + cid;
+    }
+
+    if(getURLParameter("nochrome") == "true") { 
+      const layoutElements = document.querySelectorAll('.chrome');
+      layoutElements.forEach(element => {
+        element.style.display = 'none'
+      });
+    }
+  </script>
+</body>
+
+</html>
+

@@ -10,17 +10,19 @@
 
   <title>Giggy Bank - How To Create Recurring Gigs</title>
 
-  <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" type="image/jpg" href="/img/favicon.png"/>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTEWN4VPBS"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    if(window.location.origin.includes("giggybankapp.com")) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-JTEWN4VPBS');
+      gtag('config', 'G-JTEWN4VPBS');
+    }
   </script>
 
   <script>
@@ -49,14 +51,19 @@
       window.open(appStoreUrl)
     }
   </script>
+
 </head>
 
 <body>
   <div class="container">
+    <div class="row headerSection" >
+      <div class="col-md-12">
+        <a href="index.html" class="attributableLink chrome"><img src="/img/logo.svg" class="topLogo" alt="logo linking to home"/></a>
+      </div>
+    </div>
 
-    <div class="row headerSection">
+        <div class="row headerSection">
       <div class="col-12">
-        <a href="index.html" class="attributableLink chrome"><img src="img/logo.svg" class="topLogo" alt=""/></a>
         <h1>How To Create Recurring Gigs</h1>
         &nbsp;
       </div>
@@ -74,7 +81,7 @@
         <div class="col-6">    
             <h3 class="mobile-hidden">Make any gig recurring</h3>
             <ol>
-                <li>Create a gig as you normally would. <!--a href="#">learn more</a--></li>
+                <li>Create a gig as you normally would. <a href="track.html" class="attributableLink">learn more</a></li>
                 <li>Tap the button and set the gig to repeat weekly or monthly.</li>
             </ol>
         </div>
@@ -115,10 +122,10 @@
       <div class="col-12"><h2>Download Giggy Bank</h2></div>
       <div class="col-12"><p>Track unlimited gigs and payments for up to ten clients for FREE!</p></div>
       <div class="col-12"><a class="appStoreButton large" onclick="handleAppStoreButtonClicks(event)"></a></div>
-    </div>
+    </div> 
 
-    <div class="row footerSection chrome">
-      <div class="col-md-5"><a href="index.html" class="attributableLink"><img src="img/logo.svg" height="47px" alt=""/></a></div>
+    <div class="row footerSection">
+      <div class="col-md-5"><img src="/img/logo.svg" height="47px" alt=""/></div>
       <div class="col-md-3">
         <p>Contact us</p>
         <p><a href="mailto:support@giggybankapp.com" target="_blank">support@giggybankapp.com</a></p>
@@ -126,21 +133,22 @@
       <div class="col-md-1"></div>
       <div class="col-md-3">
         <p>Legal</p>
-        <p><a href="legal/terms.html">Terms of Use</a></p>
-        <p><a href="legal/privacy.html">Privacy Policy</a></p>
+        <p><a href="/legal/terms.html">Terms of Use</a></p>
+        <p><a href="/legal/privacy.html">Privacy Policy</a></p>
       </div>
     </div>
-    <p class="copyright chrome">&copy;2018 Giggy Apps LLC</p>
   </div>
-  
+
+  <p class="copyright">&copy;2018 Giggy Apps LLC</p>
+
   <script>
     var attributableLinks = document.querySelectorAll('.attributableLink');
     for (var i = 0; i < attributableLinks.length; i++) {
       const cid = getCid()
       attributableLinks[i].href += attributableLinks[i].href.indexOf('?') != -1 ? "&cid=" + cid  : "?cid=" + cid;
     }
-    
-    if(getURLParameter("noChrome") == "true") { 
+
+    if(getURLParameter("nochrome") == "true") { 
       const layoutElements = document.querySelectorAll('.chrome');
       layoutElements.forEach(element => {
         element.style.display = 'none'
@@ -150,3 +158,4 @@
 </body>
 
 </html>
+
