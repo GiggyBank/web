@@ -5,10 +5,10 @@
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Giggy Bank - Schedule Recurring Gigs">
+  <meta name="description" content="Giggy Bank - Know What You've Been Paid">
   <meta http-equiv="Cache-control" content="max-age=2592000">
 
-  <title>Giggy Bank - Schedule Recurring Gigs</title>
+  <title>Giggy Bank - Know What You've Been Paid</title>
 
   <link rel="shortcut icon" type="image/jpg" href="/img/favicon.png"/>
   <link rel="stylesheet" href="/css/bootstrap.min.css" />
@@ -33,7 +33,7 @@
 
     function getCid() {
       var urlCid = getURLParameter('cid')
-      return (urlCid != null && urlCid != "") ? urlCid : 'recurring' 
+      return (urlCid != null && urlCid != "") ? urlCid : 'paymentreports' 
     }
 
     function handleAppStoreButtonClicks(event) {      
@@ -64,55 +64,48 @@
 
     <div class="row headerSection">
   <div class="col-12">
-    <h1>Schedule Recurring Gigs</h1>
+    <h1>Know What You've Been Paid</h1>
     &nbsp;
   </div>
 </div>
 
-<div class="row">
+<div class="row" style="padding-bottom: 2rem;">
   <div class="col-12">
-    <p>Got weekly or monthly recurring appointments? Set up Giggy Bank to create them automatically with just a few taps.</p>
-    <h3 class="d-md-none">Make any gig recurring</h3>
+    Now that you're <a href="track.html" class="attributableLink">tracking gigs and payments</a> in Giggy Bank, you're going to want to know how much money you are making. No problem! Giggy Bank has got you covered.
   </div>
 </div>
 
 <div class="row align-items-center">
-  <div class="col-6">
-    <h3 class="mobile-hidden">Make any gig recurring</h3>
-    <ol>
-      <li>Create a gig as you normally would.<br><a href="track.html" class="attributableLink">learn more</a></li>
-      <li>Tap the button and set the gig to repeat weekly or monthly.</li>
-    </ol>
+  <div class="col-12 col-md-7">
+    <h3>Get Insight On Your Income</h3>
+    <p>Giggy Bank's payment reports let you set a time period and break down income by day, week, month, client, or payment method.</p>
+    <p class="d-none d-md-block">Payment reports are super handy to quickly see who your best customers are, find out your best month, figure out how much you have been paid in cash, or get to the bottom of just about anything else related to your payments.</p>
   </div>
-  <div class="col-6">
-    <img src="img/recurring_toggle.png" alt="toggle recurring gigs" style="width: 100%" />
+  <div class="col-12 col-md-5">
+    <img src="img/report_screen.png" alt="payment reports" style="width: 100%; padding-left: 1rem;" />
   </div>
-</div>
-
-<div class="row graphicBgSection align-items-center" style="padding-top: 100px; padding-bottom: 100px;">
-  <div class="col-12">
-    <h3 class="d-md-none">Approve gigs as they come up</h3>
-  </div>
-  <div class="col-6">
-    <img src="img/recurring_approve_pending.png" alt="approve recurring gigs" style="width: 100%;" />
-  </div>
-  <div class="col-6">
-    <h3 class="mobile-hidden">Approve gigs as they come up</h3>
-    <p>When the time comes, Giggy Bank will prompt you to review and approve your recurring gigs.</p>
+  <div class="col-12 d-md-none" style="padding-top: 2rem;">
+    Payment reports are super handy to quickly see who your best customers are, find out your best month, figure out how much you have been paid in cash, or get to the bottom of just about anything else related to your payments.
   </div>
 </div>
 
-<div class="row align-items-center" style="padding-top: 20px; padding-bottom: 40px;">
-  <div class="col-12">
-    <h3 class="d-md-none">Manage your recurring gigs</h3>
+<div class="row graphicBgSection align-items-center" style="padding-top: 150px; padding-bottom: 150px;">
+
+  <div class="col-12 col-md-hidden">
+    <h3 class="d-md-none">Earnings vs. Total Payments</h3>
   </div>
-  <div class="col-6">
-    <h3 class="mobile-hidden">Manage your recurring gigs</h3>
-    <p>Tap "recurring gigs" on the settings screen to see all of your recurring gigs and stop any that you no longer need.
+  <div class="col-12 col-md-5">
+    <img src="img/report_settings.png" alt="report settings" style="width: 100%; padding-bottom: 1rem;" />
   </div>
-  <div class="col-6">
-    <img src="img/recurring_manage.png" alt="manage recurring gigs" style="width: 100%;" />
+  <div class="col-12 col-md-7">
+    <h3 class="d-none d-md-block">Earnings vs. Total Payments</h3>
+    <p>If you track <!--a class="attributableLink" href="billable_expenses.html"-->billable expenses<!--/a-->, Giggy Bank can deduct their cost to show your true earnings. Simply tap the slider icon and toggle between "Total Payments" and "Earnings".</p>
   </div>
+</div>
+
+<div class="row align-items-center">
+  <h3>Export Reports For Tax Time</h3>
+  <p>Easily export any payment report as a CSV file and send it to your accountant. No more sifting through your bank account - Giggy Bank helps make tax time a breeze!</p>
 </div>
 
 <p class="featureLinkContainer chrome" style="margin-top: 20px;"><a class="attributableLink"
