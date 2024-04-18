@@ -5,10 +5,10 @@
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Giggy Bank - Always Know Who Owes You">
+  <meta name="description" content="Giggy Bank - Easily Track Gigs">
   <meta http-equiv="Cache-control" content="max-age=2592000">
 
-  <title>Giggy Bank - Always Know Who Owes You</title>
+  <title>Giggy Bank - Easily Track Gigs</title>
 
   <link rel="shortcut icon" type="image/jpg" href="/img/favicon.png"/>
   <link rel="stylesheet" href="/css/bootstrap.min.css" />
@@ -33,7 +33,7 @@
 
     function getCid() {
       var urlCid = getURLParameter('cid')
-      return (urlCid != null && urlCid != "") ? urlCid : 'workandpay' 
+      return (urlCid != null && urlCid != "") ? urlCid : 'gigs' 
     }
 
     function handleAppStoreButtonClicks(event) {      
@@ -64,69 +64,81 @@
 
     <div class="row headerSection">
     <div class="col-12">
-        <h1>Always Know Who Owes You</h1>
+        <h1>Easily Track Gigs</h1>
         &nbsp;
     </div>
 </div>
 
 <div class="row">
     <div class="col-12">
-        <p>Giggy Bank is designed from the bottom up for ease of use so you always know who owes you and how much you've earned.</p>
+        <p>We've made it so simple to track your work in Giggy Bank that there's no need to put it off for later. On average, users enter gigs in under 10 seconds!</p>
     </div>
 </div>
+
 <div class="row align-items-center">
-    <div class="col-md-1"></div>
     <div class="col-sm-12 col-md-5">
-        <h3>You Do This</h3>
-        <ol style="margin-bottom: 20px;">
-            <li><a href="gigs.html" class="attributableLink">Enter gigs</a> to track work done.</li>
-            <li><a href="payments.html" class="attributableLink">Enter payments</a> when you get paid.</li>
-            <li>That's it!</li>
-        </ol>
+        <h3>Autocomplete Saves You Time</h3>
+        <p style="margin-bottom: 2rem">
+            Giggy Bank autocompletes the name and price of your frequently used gigs. No need to enter the same details over and over. It's all done automatically.
+        </p>
     </div>
-    <div class="col-sm-12 col-md-6 text-center">
-        <img src="img/gigpayform.webp" alt="gig and payment forms" width="90%" />
-    </div>
-    <div class="col-12 mobile-hidden" style="padding-top: 4rem;">
-        It really is that easy! Giggy Bank uses your entries to calculate client balances, tell you how much you've been
-        paid, and provide a TON of other useful functionality...
+    <div class="col-sm-12 col-md-7 text-center">
+        <img src="img/gig_autocomplete.webp" alt="gig autocomplete" width="90%" />
     </div>
 </div>
+
 <div class="row graphicBgSection align-items-center" style="padding-top: 100px;">
-    <div class="col-md-1"></div>
-
+    <div class="d-none d-md-block col-md-7 text-center" style="margin-top: 30px;">
+        <img src="img/hourly.webp" alt="flat rate or hourly" width="100%" />
+    </div>
     <div class="col-xs-12 col-md-5" style="padding-right: 30px;">
-        <h3>Giggy Bank Does The Rest!</h3>
-
-        <p class="d-md-none" styl="margin-bottom: 2rem">
-            It really is that easy! Giggy Bank uses your entries to calculate client balances, tell you how much you've
-            been paid, and provide a TON of other useful functionality...
+        <h3>Flat Rate or Hourly Work</h3>
+        <p style="margin-bottom: 2rem">
+            Track hourly or flat rate gigs with the flip of a switch and, the best part, Giggy Bank remembers the rate for each job automatically. How sweet is that?!
         </p>
-
-        <ol style="margin-bottom: 20px; list-style-type: none; padding-left: 0;">
-            <li class="mobile-hidden">✅ Track client balances</li>
-            <li>✅ Calculate your <a href="report.html" class="attributableLink">earnings</a></li>
-            <li>✅ Manage your service list</li>
-            <li>✅ Automate <a href="recurring.html" class="attributableLink">recurring gigs</a></li>
-            <li>✅ Highlight late payments</li>
-            <li>✅ Track billable expenses</li>
-            <li>✅ Send <a href="statementsreceipts.html" class="attributableLink">statements and receipts</a></li>
-            <li>... and more!</li>
-        </ol>
     </div>
+    <div class="d-md-none col-12 text-center" style="margin-top: 30px;">
+        <img src="img/hourly.webp" alt="flat rate or hourly" width="90%" />
+    </div>
+</div>
 
-    <div class="col-12 d-md-none">
+<div class="row align-items-center">
+    <div class="col-sm-12 col-md-5">
+        <h3>Track Client Balances</h3>
+        <p>Giggy Bank tracks a single balance for each client. Gigs increase your client's balance by the amount of the gig and <a href="payments.html">payments</a> bring it down. It's seriously simple.</p>
+    </div>
+    <div class="col-sm-12 col-md-7 text-center">
+        <img src="img/balances.webp" alt="client balances" width="90%" />
+    </div>
+</div>
+
+<div class="row graphicBgSection align-items-center" style="padding-top: 100px;">
+    <div class="d-none d-md-block col-md-7 text-center" style="margin-top: 30px;">
+        <img src="img/payment_reminders.webp" alt="payment reminders" width="100%" />
+    </div>
+    <div class="col-xs-12 col-md-5" style="padding-right: 30px;">
+        <h3>Payment Reminders</h3>
+        <p style="margin-bottom: 2rem">
+            Know when your gigs have gone unpaid for too long. Set a threshold and outstanding gigs will be highlighted when it's time.
+        </p>
+    </div>
+    <div class="d-md-none col-12 text-center" style="margin-top: 30px;">
+        <img src="img/payment_reminders.webp" alt="payment reminders" width="90%" />
+    </div>
+</div>
+
+<div class="row align-items-center">
+    <h3>Create Recurring Gigs Automatically</h3>
+    <p>
+        Got gigs that repeat on a regular basis? Let Giggy Bank track them for you by making your gig <a href="recurring.html">recurring</a>.
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-12">
         <div class="featureLinkContainer" style="width: 300px; margin: 30px auto;"><a class="attributableLink"
-                href="features.html">Explore All Giggy Bank Features</a></div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 text-center" style="margin-top: 30px;">
-        <img src="img/features.webp" alt="feature montage" width="100%" />
-    </div>
-
-    <div class="col-12 mobile-hidden " style="padding-top: 4rem;">
-        <div class="featureLinkContainer" style="width: 300px; margin: 40px auto;"><a class="attributableLink"
-                href="features.html">Explore All Giggy Bank Features</a></div>
+            href="features.html">Explore All Giggy Bank Features</a>
+        </div>
     </div>
 </div>
 
